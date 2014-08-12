@@ -1,0 +1,140 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage{verbatim}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{Sourya}
+\familyname{Kakarla}
+%\address{(omitted for web)}{(omitted for web)}    % optional, remove the line if not wanted
+\mobile{(+918343997373)}                    % optional, remove the line if not wanted
+\email{sourya4@gmail.com}                      % optional, remove the line if not wanted
+\social[github]{ma08}
+%\social[stackoverflow][stackoverflow.com/users/3465519/ma08]{ma08}
+\homepage{ma08.github.io}                % optional, remove the line if not wanted
+\extrainfo{\httplink[stackoverflow/ma08]{stackoverflow.com/users/3465519/ma08}} % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{\textbf{2012--2017}}{Computer Science and Engineering (Dual Degree)}{IIT Kharagpur}{Kharagpur, West Bengal}{}{}
+\cvline{CGPA:}{\small 8.68/10(at the end of 5th semester)}
+\cventry{\textbf{2010--2012}}{Intermediate}{Sri Chaitanya Junior College}{Hyderabad, Telangana}{}{}
+\cvline{Aggregate:}{\small 94.7\%}
+\cventry{\textbf{2010}}{Secondary School}{V.P.S Public School}{Vijayawada, Andhra Pradesh}{}{}  % arguments 3 to 6 can be left empty
+\cvline{CGPA:}{\small 10/10}
+
+
+\section{Experience}
+
+\cventry{2014}{Intern}{Advitech Infotech Pvt Ltd}{Hyderabad, Telangana}{}{
+\begin{description}
+  \item[$\bullet$] Worked on \texttt{MEAN Stack} to develop a social webapp.
+  \item[$\bullet$] Primarily worked on the server side - using \texttt{ node.js} and\texttt{ mongoDB}.
+  \item[$\bullet$] Designed the database schemas on \texttt{mongoose} for \texttt{mongoDB} for the social network. 
+  \item[$\bullet$] Implemented a chat server, newsfeed and email service using \texttt{socket.io} - was responsible for the server side code.
+\end{description}
+}
+
+\section{Projects}
+\cventry{2014}{Automosaicing of Torn Images}{Opensoft Competition}{IIT Kharagpur}{}{
+\begin{description}
+\item[$\bullet$] Team(of 10) secured bronze medal in the event.
+\item[$\bullet$] Used \texttt{openCV} on  \texttt{Python} for image processing.
+\item[$\bullet$] Was primarily responsible for the GUI - implemented using \texttt{PyQt} - a \texttt{python} wrapper for \texttt{Qt}.
+\item[$\bullet$] Backend -  Implemented a function to calculate \texttt{Overlapping Area} of two polygons using \texttt{Polygon} module.
+\end{description}
+}
+\bigskip
+\cventry{2014}{chrome-link-copy}{A google chrome extension}{}{}{
+\begin{description}
+\item[$\bullet$] Google's search results' and Facebook Chat links are redirection urls. Using chrome's inbuilt \texttt{Copy Link Address} option, the redirection url is copied instead of the actual url the user intended to copy.
+\item[$\bullet$] This extension is created to solve this problem by adding another option in the context menu - \texttt{Copy real link}. Using this option, the intended link is copied instead of the redirection url.
+\item[$\bullet$] Used  \texttt{regex} to extract the original url from the redirection urls \texttt{Facebook} and  \texttt{Google} create. 
+\item[$\bullet$] Built using  \texttt{JavaScript} and \texttt{jquery} in  \texttt{chrome's extension API}. 
+\end{description}
+}
+
+\bigskip
+\cventry{2013}{CASE(Computer Aided Software Engineering) Tool}{Software Engineering Project}{}{}{
+\begin{description}
+\item[$\bullet$] Developed using \texttt{Java}. A tool used to create(draw) data flow diagrams, modules, hierarchies etc.
+\item[$\bullet$] Primarily used the \texttt{Swing} library to create the GUI. 
+\item[$\bullet$] Automatic generation of \texttt{Data Dictionary} and checking of \texttt{Balancing Error}. 
+\item[$\bullet$] Implemented save and load operations for the diagrams using \texttt{Serialization}. 
+\end{description}
+}
+
+\bigskip
+\section{Technical Experience}
+\subsection{Proficient With}
+\cvline{languages}{\texttt{C, C++, JavaScript, Python }}
+\cvline{technologies}{\texttt{node.js, mongoDB, Vim, Git, socket.io,  Linux(Ubuntu) }}
+\subsection{Have Experience With}
+\cvline{languages}{\texttt{Java, Bash, Lua, VHDL }}
+\cvline{technologies}{\texttt{GAS(GNU Assembler), Angular, \LaTeX{}, jekyll, gimp, Windows}}
+
+\section{Relevant Coursework}
+\subsection{IIT Kharagpur}
+\cvline{}{Programming and Data Structures, Algorithms-1, Discrete Mathematics, Switching Circuits, Signals and Systems, Probability and Statistics, Formal Languages and Automata Theory, Compilers\textsuperscript{*}, Computer Organization and Architechture\textsuperscript{*}, Algorithms-2\textsuperscript{*}, Graph Theory\textsuperscript{*}  
+\hspace{12.5cm}
+\footnotesize{
+\textsuperscript{*}To be completed before Dec 2014}
+}
+
+
+
+
+\section{Activities}
+\cventry{2013--2014}{Football Team}{M.S.Hall}{IIT Kharagpur}{}{
+Member of Gold Winning Team , M.S.Hall in the Sports General Championship.
+}
+
+\cventry{2012--2013}{Member, KGPian Game Theory Society}{IIT Kharagpur}{}{}{
+Studied various aspects of Game Theory and its applications
+A society to discuss the ideas of Game Theory, h
+\begin{description}
+	\item[$\bullet$] Published an article on  \texttt{Burning Bridges in the Football Transfer Market} in  \texttt{The Strategist}, the magazine of the society.
+	\item[$\bullet$] Organized an event, \texttt{War of Wits} in IIT Kharagpur. Came up with the idea of the \texttt{Centipede Game} which hugely contributed to the success of the event.
+\end{description}
+}
+\cventry{2008--2010}{Football Team}{V.P.S Public School}{}{}{
+Part of school team in 9th and 10th class. Took in part in an Interschool Tournament and reached the semifinals.
+}
+
+%\cventry{}{Other Current Hobbies}{}{}{}{
+%Web Programming, Camping, Hiking, Backpacking, Traveling, Road Trips, Basketball, Piano, Guitar
+%}
+
+\end{document}
