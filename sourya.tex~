@@ -38,7 +38,11 @@
 \homepage{ma08.github.io/about}                % optional, remove the line if not wanted
 \extrainfo{\httplink[stackoverflow/ma08]{stackoverflow.com/users/3465519/ma08}} % optional, remove the line if not wanted
 
+\newcommand\Mycventry[6]{%
+\cventry{#1}{#2}{#3}{#4}{#5}{\fontsize{12}{15}\selectfont#6 }}
 \renewcommand*\titlefont{\fontsize{15}{24}\selectfont}
+\newcommand\Mycvline[2]{%
+\cvline{#1}{\selectfont \fontfamily{\sfdefault}\fontsize{12}{15}\selectfont#2 }}
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
 %\makeatletter
 %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
@@ -49,25 +53,28 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
+
+\vspace*{-2\baselineskip}
 \maketitle
-\vspace*{-8mm}
+\vspace*{-1.5\baselineskip}
+%\vspace*{-8mm}
 \pagestyle{empty}
 
 
 \section{Education}
-\cventry{\textbf{2012--2017}}{Computer Science and Engineering (Dual Degree)}{IIT Kharagpur}{ W.B}{}{}
+\cventry{\textbf{2012--2017}}{Computer Science and Engineering (Dual Degree)}{}{IIT Kharagpur, W.B}{}{}
 \cvline{CGPA:}{\small 8.69/10(at the end of 4th semester)}
-\cventry{\textbf{2010--2012}}{Intermediate}{Sri Chaitanya Junior College}{Hyderabad, Telangana}{}{}
+\cventry{\textbf{2010--2012}}{Intermediate}{}{Sri Chaitanya Junior College, Hyderabad, Telangana}{}{}
 \cvline{Aggregate:}{\small 94.7\%}
-\cventry{\textbf{2010}}{Secondary School}{V.P.S Public School}{Vijayawada, Andhra Pradesh}{}{}  % arguments 3 to 6 can be left empty
+\cventry{\textbf{2010}}{Secondary School}{}{V.P.S Public School, Vijayawada, Andhra Pradesh}{}{}  % arguments 3 to 6 can be left empty
 \cvline{CGPA:}{\small 10/10}
 
 
 \section{Experience}
 
-\cventry{2014}{Intern}{Advitech Infotech Pvt Ltd}{Hyderabad, Telangana}{}{
+\Mycventry{2014}{Intern}{}{Advitech Infotech Pvt Ltd, Hyderabad, Telangana}{}{
 \begin{description}
-  \item[$\bullet$] Worked on \texttt{MEAN Stack} to develop a social webapp.
+  \item[$\bullet$] Worked on \texttt{MEAN Stack} to develop a social webapp for professionals.
   \item[$\bullet$] Primarily worked on the server side - using \texttt{ node.js} and\texttt{ mongoDB}.
   \item[$\bullet$] Designed the database schemas on \texttt{mongoose} for \texttt{mongoDB} for the social network. 
   \item[$\bullet$] Used \texttt{Express.js} for url routing and \texttt{socket.io} for real time updates . 
@@ -77,29 +84,28 @@
 }
 
 \section{Projects}
-\cventry{2014}{Automosaicing of Torn Images}{Opensoft Competition}{IIT Kharagpur}{}{
+\Mycventry{2014}{Automated Restoration of Torn Documents}{}{Opensoft Competition, IIT Kharagpur}{}{
 \begin{description}
 \item[$\bullet$] Team(of 7) secured bronze medal in the competition.
 \item[$\bullet$] Used \texttt{openCV} on  \texttt{Python} for image processing.
 \item[$\bullet$] Was primarily responsible for the GUI - implemented using \texttt{PyQt} - a \texttt{python} wrapper for \texttt{Qt}.
-\item[$\bullet$] Implemented drag and drop functionality to upload and remove images, implemented animation effects for loading - using \texttt{PyQt} - a \texttt{python} wrapper for \texttt{Qt}.
+\item[$\bullet$] Implemented drag and drop functionality to upload and remove images, implemented animation effects for loading - using \texttt{PyQt}.
 \item[$\bullet$] Back-end -  Implemented a function to calculate \texttt{Overlapping Area} of two polygons using \texttt{Polygon} module.
 \item[$\bullet$] Github repo: \httplink{github.com/ma08/OpenSoft14}. 
 \end{description}
 }
 \bigskip
-\cventry{2014}{chrome-link-copy}{A google chrome extension}{}{}{
+\Mycventry{2014}{Chrome Link Copy}{}{A google chrome extension}{}{
 \begin{description}
-\item[$\bullet$] Google's search results' and Facebook Chat links are redirection urls. Using chrome's inbuilt \texttt{Copy Link Address} option, the redirection url is copied instead of the actual url the user intended to copy.
+	\item[$\bullet$] Google Search results and links(sent/received) in Facebook Chat  are redirection urls. Using chrome's inbuilt \texttt{Copy Link Address} option, the redirection url is copied instead of the actual url the user intended to copy.
 \item[$\bullet$] This extension is created to solve this problem by adding another option in the context menu - \texttt{Copy real link}. Using this option, the intended link is copied instead of the redirection url.
-\item[$\bullet$] Used  \texttt{regex} to extract the original url from the redirection urls \texttt{Facebook} and  \texttt{Google} create. 
-\item[$\bullet$] Built using  \texttt{JavaScript} and \texttt{jquery} in  \texttt{chrome's extension API}. 
+\item[$\bullet$] Built using  \texttt{JavaScript} and \texttt{jquery} in  \texttt{chrome's extension API}. Used  \texttt{regex} to extract the original url from the redirection urls \texttt{Facebook} and  \texttt{Google} create. 
 \item[$\bullet$] Github repo: \httplink{github.com/ma08/chrome-link-copy}. 
 \end{description}
 }
 
 %\bigskip
-\cventry{2013}{CASE(Computer Aided Software Engineering) Tool}{Software Engineering Project}{}{}{
+\Mycventry{2013}{CASE(Computer Aided Software Engineering) Tool}{}{Software Engineering Project}{}{
 \begin{description}
 \item[$\bullet$] Developed using \texttt{Java} for Software Engineering Course by a team of 2. A tool used to create(draw) data flow diagrams, modules, hierarchies etc.
 \item[$\bullet$] Primarily used the \texttt{Swing} library to create the GUI to create the diagrams. 
@@ -119,33 +125,31 @@
 \cvline{technologies}{\texttt{GAS(GNU Assembler), Angular, \LaTeX{}, jekyll, gimp, Windows}}
 
 \section{Relevant Coursework}
-\subsection{IIT Kharagpur}
-\cvline{}{Programming and Data Structures, Algorithms-1, Discrete Mathematics, Switching Circuits, Signals and Systems, Probability and Statistics, Formal Languages and Automata Theory, Compilers\textsuperscript{*}, Computer Organization and Architechture\textsuperscript{*}, Algorithms-2\textsuperscript{*}, Graph Theory\textsuperscript{*}  
-\hspace{12.5cm}
+\Mycventry{}{IIT Kharagpur}{}{}{}{
+Programming and Data Structures, Algorithms-1, Discrete Mathematics, Switching Circuits, Software Engineering, Signals and Systems, Probability and Statistics, Formal Languages and Automata Theory,
+Compilers\textsuperscript{*}, Computer Organization and Architechture\textsuperscript{*}, Algorithms-2\textsuperscript{*}, Graph Theory\textsuperscript{*}  
 \footnotesize{
 \textsuperscript{*}To be completed before Dec 2014}
 }
 
 
-
-
 \section{Activities}
-\cventry{2013--2014}{Football Team}{M.S.Hall}{IIT Kharagpur}{}{
+\Mycventry{2013--2014}{Football Team}{M.S.Hall}{IIT Kharagpur}{}{
 Member of Gold Winning Team , M.S.Hall in the Sports General Championship.
 }
 
-\cventry{2012--2013}{Member, KGPian Game Theory Society}{IIT Kharagpur}{}{}{
+\Mycventry{2012--2013}{Member, KGPian Game Theory Society}{IIT Kharagpur}{}{}{
 Studied various aspects of Game Theory and its applications.
 \begin{description}
 	\item[$\bullet$] Published an article on  \texttt{Burning Bridges in the Football Transfer Market} in  \texttt{The Strategist}, the magazine of the society.
 	\item[$\bullet$] Organized an event, \texttt{War of Wits} in IIT Kharagpur. Came up with the idea of the \texttt{Centipede Game} which hugely contributed to the success of the event.
 \end{description}
 }
-\cventry{2008--2010}{Football Team}{V.P.S Public School}{}{}{
+\Mycventry{2008--2010}{Football Team}{V.P.S Public School}{}{}{
 Part of school team in 9th and 10th class. Took part in an Interschool Tournament and reached the semifinals.
 }
 
-%\cventry{}{Other Current Hobbies}{}{}{}{
+%\Mycventry{}{Other Current Hobbies}{}{}{}{
 %Web Programming, Camping, Hiking, Backpacking, Traveling, Road Trips, Basketball, Piano, Guitar
 %}
 
