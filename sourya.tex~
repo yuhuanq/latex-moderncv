@@ -84,7 +84,7 @@
 }
 
 \section{Projects}
-\Mycventry{2014}{Automated Restoration of Torn Documents}{}{Opensoft Competition, IIT Kharagpur}{}{
+\Mycventry{2014}{Automated Restoration of Torn Documents}{}{Opensoft, IIT Kharagpur}{}{
 \begin{description}
 \item[$\bullet$] Team(of 7) secured bronze medal in the competition.
 \item[$\bullet$] Used \texttt{openCV} on  \texttt{Python} for image processing.
